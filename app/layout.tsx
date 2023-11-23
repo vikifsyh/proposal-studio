@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./component/Navbar";
 
 const alliance = localFont({
   src: [
@@ -39,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={alliance.className}>{children}</body>
+      <body className={alliance.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
