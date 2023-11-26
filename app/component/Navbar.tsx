@@ -19,15 +19,15 @@ export default function Navbar() {
           <Icon name="proposal-studio" />
         </div>
 
-        <div className="block md:hidden">
+        <div className="block md:hidden ">
           <Image alt="logo" src={Logo} />
         </div>
 
         {/* Toggle button and Contact button for mobile */}
         <div className="md:hidden flex items-center">
-          <div className="bg-primary py-3 px-4 text-white font-medium text-sm rounded-full hover:bg-primary/50 ease-in duration-300 mr-2">
+          <button className="bg-primary py-3 px-4 text-white font-medium text-sm rounded-full hover:bg-primary/50 focus:ring-4 focus:ring-blue-300 ease-in duration-300 mr-2 ">
             Hubungi Kami
-          </div>
+          </button>
           <button onClick={toggleMenu}>
             <Icon name={isMenuOpen ? "close" : "menu"} />
           </button>
