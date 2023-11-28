@@ -71,8 +71,10 @@ export default function Service() {
   return (
     <div className="my-14 md:my-[100px] mx-5 md:mx-20">
       <div className="text-center">
-        <h2 className="text-4xl md:text-7xl text-baseBlack font-bold ">
-          Layanan Unggulan Kami
+        <h2 className="text-xl md:text-4xl text-baseBlack font-bold ">
+          Apapun kebutuhan proposal Anda, serahkan pada Tim
+          <span className="text-primary"> Proposal</span>
+          <span className="text-secondary"> Studio</span>. Kami siap membantu!
         </h2>
         <p className="font-medium text-sm text-baseBlack mt-4 md:mt-6">
           Proposal Studio menyediakan berbagai pelayanan pembuatan proposal

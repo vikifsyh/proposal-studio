@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Icon from "./atom/icon/Icon";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +26,11 @@ export default function Navbar() {
 
         {/* Toggle button and Contact button for mobile */}
         <div className="md:hidden flex items-center">
-          <button className="bg-primary py-3 px-4 text-white font-medium text-sm rounded-full hover:bg-primary/50 focus:ring-4 focus:ring-blue-300 ease-in duration-300 mr-2 ">
-            Hubungi Kami
-          </button>
+          <Link href={"/"}>
+            <button className="border border-primary py-3 px-4 text-primary font-medium text-sm rounded-full hover:bg-primary focus:ring-4 focus:ring-blue-300 ease-in focus:text-white hover:text-white duration-300 mr-2 ">
+              Hubungi Kami
+            </button>
+          </Link>
           <button onClick={toggleMenu}>
             <Icon name={isMenuOpen ? "close" : "menu"} />
           </button>
@@ -35,7 +38,7 @@ export default function Navbar() {
 
         {/* Menu items for larger screens */}
         <div className="hidden md:flex md:flex-row flex-col items-center gap-10 font-medium text-lg">
-          <div className="gap-2 text-primary underline underline-offset-4">
+          <div className="gap-2 text-primary md:underline underline-offset-4">
             Beranda
           </div>
           <div>Tentang Kami</div>
@@ -43,12 +46,15 @@ export default function Navbar() {
           <div>Klien</div>
           <div>Kegiatan</div>
         </div>
+
         {/* Contact button for larger screens */}
 
         <div className="hidden md:flex">
-          <div className="bg-primary py-4 px-6 text-white font-medium text-lg rounded-full hover:bg-primary/50 ease-in duration-300">
-            Hubungi Kami
-          </div>
+          <Link href={"/"}>
+            <button className="border border-primary py-4 px-6 text-primary font-medium text-lg rounded-full hover:bg-primary hover:text-white ease-in duration-300">
+              Hubungi Kami
+            </button>
+          </Link>
         </div>
       </nav>
 
