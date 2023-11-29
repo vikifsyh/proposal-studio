@@ -227,7 +227,7 @@ export default function Testimoni() {
                       <Icon name="user" />
 
                       <div className="">
-                        <p className="font-medium text-sm text-baseBlack">
+                        <p className="font-semibold text-sm text-baseBlack">
                           {data.name}
                         </p>
                         <p className="font-normal text-sm text-border">

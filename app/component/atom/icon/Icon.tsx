@@ -9,7 +9,8 @@ interface IconProps {
     | "circle-active"
     | "circle-nonActive"
     | "star"
-    | "user";
+    | "user"
+    | "arrrow-right";
   className?: string;
 }
 
@@ -184,6 +185,33 @@ const Icon = ({ name, className }: IconProps) => {
           <path
             d="M12.0002 14.5C6.99016 14.5 2.91016 17.86 2.91016 22C2.91016 22.28 3.13016 22.5 3.41016 22.5H20.5902C20.8702 22.5 21.0902 22.28 21.0902 22C21.0902 17.86 17.0102 14.5 12.0002 14.5Z"
             fill="#05408C"
+          />
+        </svg>
+      );
+    case "arrrow-right":
+      return (
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.24 7.90674L27.3333 16.0001L19.24 24.0934"
+            stroke="#F7F8FB"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.66675 16H27.1067"
+            stroke="#F7F8FB"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
         </svg>
       );

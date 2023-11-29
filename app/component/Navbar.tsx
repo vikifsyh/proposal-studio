@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-white px-4 py-2 md:px-20 fixed top-0 w-full mx-auto">
+    <header className="bg-white px-4 py-2 md:px-20 fixed top-0 w-full mx-auto z-50">
       <nav className="flex justify-between items-center">
         {/* Icon proposal-studio */}
         <div className="hidden md:block">

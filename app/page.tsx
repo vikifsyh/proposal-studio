@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./component/Hero";
 import Service from "./component/Service";
 import Testimoni from "./component/Testimoni";
+import Cta from "./component/Cta";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Service />
       <Testimoni />
+      <Cta />
     </div>
   );
 }
