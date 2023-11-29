@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-padding-top: 120px; /* height of your navbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
-/* hamburger */
-.open span:nth-child(1) {
-  transform: rotate(45deg) translate(6.5px, 6.5px);
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.open span:nth-child(2) {
-  width: 0;
-  opacity: 0;
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6.5px, -6.5px);
+.animation-container {
+  /* Ganti selector "animation-container" sesuai dengan elemen HTML yang ingin Anda animasikan */
+  width: 100%; /* Sesuaikan lebar elemen container sesuai kebutuhan */
+  overflow: hidden; /* Agar elemen yang bergerak tidak terlihat di luar container */
 }
 
-.active-link {
-  background-color: #272e38;
-  color: #fff;
-  transition: all 0.5s ease-in-out;
+.ticker-element {
+  /* Ganti selector "ticker-element" sesuai dengan elemen HTML yang ingin Anda animasikan */
+  animation: ticker 150s linear infinite;
 }
