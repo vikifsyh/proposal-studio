@@ -19,6 +19,7 @@ const config: Config = {
         secondary: "#CA5419",
         baseBlack: "#272E38",
         greyscale: "#292D321A",
+        border: "#9A9A9A",
       },
     },
   },
