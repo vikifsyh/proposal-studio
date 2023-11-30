@@ -208,7 +208,7 @@ export default function Testimoni() {
               return (
                 <div
                   key={data.id}
-                  className="p-7 w-[300px] h-fit md:w-[500px]  border border-border rounded-2xl"
+                  className="p-7 w-[300px] md:h-300 md:w-[500px]  border border-border rounded-2xl"
                 >
                   <div className="flex">
                     <Icon name="star" />
@@ -218,7 +218,7 @@ export default function Testimoni() {
                     <Icon name="star" />
                   </div>
                   <div className="mt-1">
-                    <p className="font-medium text-sm text-baseBlack">
+                    <p className="line-clamp-3 font-medium text-sm text-baseBlack">
                       {data.review}
                     </p>
                   </div>
