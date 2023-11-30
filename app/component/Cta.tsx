@@ -11,7 +11,7 @@ export default function Cta() {
             Konsultasikan secara <span className="text-secondary">GRATIS </span>
             proposal Anda dan segera realisasikan tujuan Anda Bersama Kami
           </h1>
-          <h1 className="text-xl text-white font-semibold block md:hidden text-center">
+          <h1 className="text-lg text-white font-semibold block md:hidden text-center">
             Konsultasikan secara <span className="text-secondary">GRATIS </span>
             proposal Anda dan segera realisasikan tujuan Anda Bersama Kami
           </h1>

@@ -208,14 +208,14 @@ export default function Hero() {
       className="mt-24 md:mt-[170px] w-full mx-auto flex items-center justify-center"
       style={{ backgroundImage: "url('/bg.png')" }}
     >
-      <div className="w-[375px] md:w-[1055px] text-center flex flex-col items-center mt-2">
+      <div className="mx-5 w-[375px] md:w-[1055px] text-center flex flex-col items-center mt-2">
         <div className="px-4 py-2 rounded-full md:px-4 md:py-3 bg-greyscale/10 w-fit">
           <p className="text-xs font-medium md:text-sm text-baseBlack">
             JASA PROPOSAL PROFESIONAL
           </p>
         </div>
         <div className="items-center mt-2">
-          <h1 className="text-4xl md:text-7xl font-bold">
+          <h1 className="text-3xl md:text-7xl font-bold">
             Realisasikan Tujuanmu Bersama
             <span className="text-primary"> PROPOSAL</span>
             <span className="text-secondary"> STUDIO</span>
