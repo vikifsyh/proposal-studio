@@ -83,8 +83,7 @@ export default function Service() {
           untuk semua kebutuhan proposal Anda
         </h2>
         <p className="font-medium text-sm text-baseBlack mt-4 md:mt-6">
-          Proposal Studio menyediakan berbagai pelayanan pembuatan proposal
-          antara lain
+          Layanan Unggulan Kami
         </p>
       </div>
       <div className="mt-8 md:mt-16 ">

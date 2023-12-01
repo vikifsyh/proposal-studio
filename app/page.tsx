@@ -4,6 +4,7 @@ import Service from "./component/Service";
 import Testimoni from "./component/Testimoni";
 import Cta from "./component/Cta";
 import Faq from "./component/Faq";
+import Footer from "./component/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Testimoni />
       <Faq />
       <Cta />
+      <Footer />
     </div>
   );
 }

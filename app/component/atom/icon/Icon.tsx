@@ -10,7 +10,12 @@ interface IconProps {
     | "circle-nonActive"
     | "star"
     | "user"
-    | "arrrow-right";
+    | "arrrow-right"
+    | "clock"
+    | "calender"
+    | "facebook"
+    | "instagram"
+    | "mail";
   className?: string;
 }
 
@@ -207,6 +212,173 @@ const Icon = ({ name, className }: IconProps) => {
           />
           <path
             d="M4.66675 16H27.1067"
+            stroke="#F7F8FB"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
+    case "clock":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 12.8711C22 18.3911 17.52 22.8711 12 22.8711C6.48 22.8711 2 18.3911 2 12.8711C2 7.35109 6.48 2.87109 12 2.87109C17.52 2.87109 22 7.35109 22 12.8711Z"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.7099 16.0509L12.6099 14.2009C12.0699 13.8809 11.6299 13.1109 11.6299 12.4809V8.38086"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
+    case "calender":
+      return (
+        <svg
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 2.87109V5.87109"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16 2.87109V5.87109"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M3.5 9.96094H20.5"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 9.37109V17.8711C21 20.8711 19.5 22.8711 16 22.8711H8C4.5 22.8711 3 20.8711 3 17.8711V9.37109C3 6.37109 4.5 4.37109 8 4.37109H16C19.5 4.37109 21 6.37109 21 9.37109Z"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.6947 14.5713H15.7037"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.6947 17.5713H15.7037"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.9955 14.5713H12.0045"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.9955 17.5713H12.0045"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.29431 14.5713H8.30329"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.29431 17.5713H8.30329"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
+    case "facebook":
+      return (
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.80952 0.871094C1.71465 0.871094 0 2.5852 0 4.6794V29.0526C0 31.1468 1.71465 32.8609 3.80952 32.8609H16.6339C16.7162 32.8745 16.8002 32.8745 16.8824 32.8609H21.2054C21.2876 32.8745 21.3716 32.8745 21.4539 32.8609H28.1905C30.2853 32.8609 32 31.1468 32 29.0526V4.6794C32 2.5852 30.2853 0.871094 28.1905 0.871094H3.80952ZM3.80952 2.39442H28.1905C29.4617 2.39442 30.4762 3.40858 30.4762 4.6794V29.0526C30.4762 30.3234 29.4617 31.3376 28.1905 31.3376H22.0952V20.6743H25.006L26.0729 15.3427H22.0952V13.8193C22.0952 13.3947 22.1357 13.3615 22.2783 13.2689C22.4209 13.1763 22.8616 13.0577 23.619 13.0577H25.9048V8.76887L25.4702 8.56209C25.4702 8.56209 23.7201 7.72605 21.3333 7.72605C19.619 7.72605 18.2107 8.40885 17.3095 9.535C16.4083 10.6612 16 12.1691 16 13.8193V15.3427H13.7143V20.6743H16V31.3376H3.80952C2.5383 31.3376 1.52381 30.3234 1.52381 29.0526V4.6794C1.52381 3.40858 2.5383 2.39442 3.80952 2.39442ZM21.3333 9.24938C22.9174 9.24938 23.9142 9.59856 24.381 9.78343V11.5344H23.619C22.7422 11.5344 22.0396 11.6069 21.4479 11.9911C20.8562 12.3753 20.5714 13.1045 20.5714 13.8193V16.866H24.2128L23.756 19.151H20.5714V31.3376H17.5238V19.151H15.2381V16.866H17.5238V13.8193C17.5238 12.423 17.8774 11.2651 18.5 10.4871C19.1226 9.70907 20 9.24938 21.3333 9.24938Z"
+            fill="white"
+          />
+        </svg>
+      );
+    case "instagram":
+      return (
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.45455 0.871094C4.24181 0.871094 0 5.1129 0 10.3256V23.4165C0 28.6293 4.24181 32.8711 9.45455 32.8711H22.5455C27.7582 32.8711 32 28.6293 32 23.4165V10.3256C32 5.1129 27.7582 0.871094 22.5455 0.871094H9.45455ZM9.45455 2.32564H22.5455C26.972 2.32564 30.5455 5.89911 30.5455 10.3256V23.4165C30.5455 27.8431 26.972 31.4165 22.5455 31.4165H9.45455C5.02801 31.4165 1.45455 27.8431 1.45455 23.4165V10.3256C1.45455 5.89911 5.02801 2.32564 9.45455 2.32564ZM24.7273 6.68928C24.3415 6.68928 23.9715 6.84252 23.6988 7.1153C23.426 7.38808 23.2727 7.75805 23.2727 8.14382C23.2727 8.52959 23.426 8.89956 23.6988 9.17234C23.9715 9.44512 24.3415 9.59837 24.7273 9.59837C25.113 9.59837 25.483 9.44512 25.7558 9.17234C26.0286 8.89956 26.1818 8.52959 26.1818 8.14382C26.1818 7.75805 26.0286 7.38808 25.7558 7.1153C25.483 6.84252 25.113 6.68928 24.7273 6.68928ZM16 8.87109C11.5903 8.87109 8 12.4614 8 16.8711C8 21.2808 11.5903 24.8711 16 24.8711C20.4097 24.8711 24 21.2808 24 16.8711C24 12.4614 20.4097 8.87109 16 8.87109ZM16 10.3256C19.6236 10.3256 22.5455 13.2475 22.5455 16.8711C22.5455 20.4947 19.6236 23.4165 16 23.4165C12.3764 23.4165 9.45455 20.4947 9.45455 16.8711C9.45455 13.2475 12.3764 10.3256 16 10.3256Z"
+            fill="white"
+          />
+        </svg>
+      );
+    case "mail":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 21.3711H7C4 21.3711 2 19.8711 2 16.3711V9.37109C2 5.87109 4 4.37109 7 4.37109H17C20 4.37109 22 5.87109 22 9.37109V16.3711C22 19.8711 20 21.3711 17 21.3711Z"
+            stroke="#F7F8FB"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17 9.87109L13.87 12.3711C12.84 13.1911 11.15 13.1911 10.12 12.3711L7 9.87109"
             stroke="#F7F8FB"
             stroke-width="1.5"
             stroke-miterlimit="10"
