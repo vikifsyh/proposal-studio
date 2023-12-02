@@ -15,7 +15,9 @@ interface IconProps {
     | "calender"
     | "facebook"
     | "instagram"
-    | "mail";
+    | "mail"
+    | "line"
+    | "linbeMobile";
   className?: string;
 }
 
@@ -385,6 +387,30 @@ const Icon = ({ name, className }: IconProps) => {
             stroke-linecap="round"
             stroke-linejoin="round"
           />
+        </svg>
+      );
+    case "line":
+      return (
+        <svg
+          width="2"
+          height="120"
+          viewBox="0 0 2 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="1" y1="170" x2="1" stroke="#f7f8fb" stroke-width="2" />
+        </svg>
+      );
+    case "linbeMobile":
+      return (
+        <svg
+          width="2"
+          height="71"
+          viewBox="0 0 2 71"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="1" y1="71" x2="1" stroke="white" stroke-width="2" />
         </svg>
       );
     default:

@@ -5,11 +5,13 @@ import Testimoni from "./component/Testimoni";
 import Cta from "./component/Cta";
 import Faq from "./component/Faq";
 import Footer from "./component/Footer";
+import About from "./component/About";
 
 export default function Home() {
   return (
     <div className="bg-white">
       <Hero />
+      <About />
       <Service />
       <Testimoni />
       <Faq />

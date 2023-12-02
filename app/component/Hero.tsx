@@ -205,6 +205,7 @@ export default function Hero() {
   }, [activeIndex]);
   return (
     <div
+      id="home"
       className="mt-24 md:mt-[170px] w-full mx-auto flex items-center justify-center"
       style={{ backgroundImage: "url('/bg.png')" }}
     >
@@ -215,7 +216,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="items-center mt-2">
-          <h1 className="text-3xl md:text-7xl font-bold">
+          <h1 className="text-3xl md:text-7xl font-bold text-baseBlack">
             Realisasikan Tujuanmu Bersama
             <span className="text-primary"> PROPOSAL</span>
             <span className="text-secondary"> STUDIO</span>
