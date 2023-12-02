@@ -8,7 +8,7 @@ import {
 
 export default function Faq() {
   return (
-    <div className="mx-5 md:mx-20 my-14 md:my-[100px] flex-col items-center justify-center flex">
+    <div className="mx-5 md:mx-20 my-14 md:mt-[200px] flex-col items-center justify-center flex">
       <h2 className="text-xl md:text-4xl text-baseBlack font-bold  text-center">
         Memiliki Pertanyaan?
         <br /> Temukan jawabannya secara mudah di FAQ kami

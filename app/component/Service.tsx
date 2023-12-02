@@ -69,7 +69,7 @@ const service = [
 
 export default function Service() {
   return (
-    <div className="my-14 md:my-[100px] mx-5 md:mx-20">
+    <div id="service" className="my-28 md:mt-[200px] mx-5 md:mx-20">
       <div className="text-center">
         <h2 className="hidden md:block text-4xl text-baseBlack font-bold ">
           Kami memberikan
@@ -82,11 +82,8 @@ export default function Service() {
           <span className="text-primary"> solusi terbaik dan terpercaya </span>
           untuk semua kebutuhan proposal Anda
         </h2>
-        <p className="font-medium text-sm text-baseBlack mt-4 md:mt-6">
-          Layanan Unggulan Kami
-        </p>
       </div>
-      <div className="mt-8 md:mt-16 ">
+      <div className="mt-8 md:mt-16">
         <div className="md:grid grid-cols-3 md:gap-8">
           {service.map((item) => {
             return (
@@ -95,7 +92,7 @@ export default function Service() {
                 className="px-3 py-3 mb-3 shadow-md rounded-3xl justify-center items-center md:w-[416px] md:h-[349px]"
               >
                 <Image alt={item.alt} src={item.image} />
-                <h2 className="mt-5 text-lg md:text-2xl font-semibold text-center">
+                <h2 className="mt-5 text-lg md:text-2xl font-semibold text-center text-baseBlack">
                   {item.title}
                 </h2>
               </div>

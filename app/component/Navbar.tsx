@@ -37,14 +37,32 @@ export default function Navbar() {
         </div>
 
         {/* Menu items for larger screens */}
-        <div className="hidden md:flex md:flex-row flex-col items-center gap-10 font-medium text-lg">
-          <div className="gap-2 text-primary md:underline underline-offset-4">
-            Beranda
-          </div>
-          <div>Tentang Kami</div>
-          <div>Layanan</div>
-          <div>Klien</div>
-          <div>Kegiatan</div>
+        <div className="hidden  md:flex md:flex-row flex-col items-center gap-10 font-medium text-lg text-baseBlack">
+          <Link href={"#beranda"}>
+            <div className="gap-2 md:hover:underline underline-offset-4 hover:text-primary ">
+              Beranda
+            </div>
+          </Link>
+          <Link href={"#about"}>
+            <div className="gap-2 md:hover:underline underline-offset-4 hover:text-primary">
+              Tentang Kami
+            </div>
+          </Link>
+          <Link href={"#service"}>
+            <div className="gap-2 md:hover:underline underline-offset-4 hover:text-primary">
+              Layanan
+            </div>
+          </Link>
+          <Link href={"/"}>
+            <div className="gap-2 md:hover:underline underline-offset-4 hover:text-primary">
+              Klien
+            </div>
+          </Link>
+          <Link href={"/"}>
+            <div className="gap-2 md:hover:underline underline-offset-4 hover:text-primary">
+              Kegiatan
+            </div>
+          </Link>
         </div>
 
         {/* Contact button for larger screens */}
@@ -61,11 +79,21 @@ export default function Navbar() {
       {/* Responsive Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white py-2 px-4 mt-2 text-sm font-medium gap-6 -ml-4">
-          <div className="text-primary">Beranda</div>
-          <div className="mt-4">Tentang Kami</div>
-          <div className="mt-4">Layanan</div>
-          <div className="mt-4">Klien</div>
-          <div className="mt-4">Kegiatan</div>
+          <Link href={"#home"}>
+            <div className="text-primary">Beranda</div>
+          </Link>
+          <Link href={"#about"}>
+            <div className="mt-4">Tentang Kami</div>
+          </Link>
+          <Link href={"#service"}>
+            <div className="mt-4">Layanan</div>
+          </Link>
+          <Link href={"#"}>
+            <div className="mt-4">Klien</div>
+          </Link>
+          <Link href={"#"}>
+            <div className="mt-4">Kegiatan</div>
+          </Link>
         </div>
       )}
     </header>

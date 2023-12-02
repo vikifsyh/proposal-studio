@@ -186,16 +186,16 @@ const testi = [
 
 export default function Testimoni() {
   return (
-    <div className="my-14 md:my-[100px] mx-5 md:mx-20">
+    <div className="my-14 md:mt-[200px] mx-5 md:mx-20">
       <div className="justify-center">
-        <h2 className="font-bold text-4xl text-center hidden md:block">
+        <h2 className="font-bold text-4xl text-center hidden md:block text-baseBlack">
           Proposal Studio telah memiliki <br />
           banyak
           <span className="text-primary"> testimoni positif</span> dari klien.
         </h2>
       </div>
       <div className="justify-center">
-        <h2 className="font-bold text-xl text-center block md:hidden">
+        <h2 className="font-bold text-xl text-center block md:hidden text-baseBlack">
           Proposal Studio telah memiliki banyak
           <span className="text-primary"> testimoni positif</span> dari klien.
         </h2>
