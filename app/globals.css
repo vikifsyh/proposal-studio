@@ -29,5 +29,5 @@
 
 .ticker-element {
   /* Ganti selector "ticker-element" sesuai dengan elemen HTML yang ingin Anda animasikan */
-  animation: ticker 150s linear infinite;
+  animation: ticker 300s linear infinite;
 }
