@@ -53,7 +53,7 @@ export default function Navbar() {
               Layanan
             </div>
           </Link>
-          <Link href={"/"}>
+          <Link href={"#klien"}>
             <div className="gap-2 md:hover:underline underline-offset-4 hover:text-primary">
               Klien
             </div>

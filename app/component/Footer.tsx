@@ -32,7 +32,7 @@ export default function Footer() {
               <div className="flex gap-3 mt-3 md:mt-6">
                 <Icon name="calender" />
                 <p className="text-white text-sm md:text-lg font-medium">
-                  Sabtu, Minggu dan Tanggal Merah Libur
+                  Sabtu, Minggu, dan Tanggal Merah Libur
                 </p>
               </div>
             </div>

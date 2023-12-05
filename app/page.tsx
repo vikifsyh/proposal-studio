@@ -6,13 +6,15 @@ import Cta from "./component/Cta";
 import Faq from "./component/Faq";
 import Footer from "./component/Footer";
 import About from "./component/About";
+import Klien from "./component/Klien";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden">
       <Hero />
       <About />
       <Service />
+      <Klien />
       <Testimoni />
       <Faq />
       <Cta />
