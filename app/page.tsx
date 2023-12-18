@@ -7,13 +7,15 @@ import Faq from "./component/Faq";
 import Footer from "./component/Footer";
 import About from "./component/About";
 import Klien from "./component/Klien";
+import Proposal from "./component/Proposal";
 
 export default function Home() {
   return (
-    <div className="bg-white overflow-x-hidden">
+    <div className="bg-white ">
       <Hero />
       <About />
       <Service />
+      <Proposal />
       <Klien />
       <Testimoni />
       <Faq />

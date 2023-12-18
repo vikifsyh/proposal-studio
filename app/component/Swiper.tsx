@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import Marketing from "@/public/about/marketing.jpg";
+import Marketing from "@/public/proposal/marketing.jpg";
 import Image from "next/image";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 

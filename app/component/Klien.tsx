@@ -11,19 +11,16 @@ export default function Klien() {
     >
       <div className="mx-5 text-center w-[375px] lg:w-[860px]">
         <h2 className="font-bold text-xl lg:text-4xl text-baseBlack">
-          Jejaring <span className="text-primary">Kepercayaan</span> Kami
+          Kegiatan Terkini Kami
         </h2>
         <p className="text-base lg:text-xl text-baseBlack font-medium mt-3 lg:mt-6">
-          Telah dipercaya oleh ratusan klien dari Perusahaan, NGO, Event
-          Organizer, Business Owner, Cerative Agency, Influencer, dan lainnya.
+          Dapatkan Wawasan Mendalam melalui Serangkaian Kegiatan, Termasuk
+          Webinar Terbaru Kami yang Penuh Informasi.
         </p>
       </div>
       <div className="mb-14">
         <Carousel />
       </div>
-      {/* <div className="block lg:hidden">
-        <CarouselPagination />
-      </div> */}
     </div>
   );
 }

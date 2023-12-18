@@ -20,6 +20,7 @@ const config: Config = {
         baseBlack: "#272E38",
         greyscale: "#292D321A",
         border: "#9A9A9A",
+        orange: "#FAE8DF",
       },
       keyframes: {
         "accordion-down": {
