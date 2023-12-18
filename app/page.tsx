@@ -11,7 +11,7 @@ import Proposal from "./component/Proposal";
 
 export default function Home() {
   return (
-    <div className="bg-white ">
+    <div className="bg-white overflow-x-hidden">
       <Hero />
       <About />
       <Service />
