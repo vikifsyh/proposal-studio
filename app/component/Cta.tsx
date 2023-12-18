@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Cta() {
   return (
-    <div className="md:mx-20 mx-5 mt-14 md:mt-[60px] md:mb-16 mb-8">
+    <div className="md:mx-20 mx-5 mt-14 md:mt-[100px] md:mb-16 mb-8">
       <div className="bg-primary rounded-2xl md:rounded-[40px] p-8 md:p-16">
         <div className="md:flex md:gap-20">
           <h1 className="text-4xl text-white font-semibold hidden md:block">
