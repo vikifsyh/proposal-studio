@@ -186,7 +186,7 @@ const testi = [
 
 export default function Testimoni() {
   return (
-    <div className="my-14 md:mt-[200px] mx-5 md:mx-20">
+    <div className="my-14 md:mt-[100px] mx-5 md:mx-20">
       <div className="justify-center">
         <h2 className="font-bold text-4xl text-center hidden md:block text-baseBlack">
           Proposal Studio telah memiliki <br />
@@ -210,18 +210,6 @@ export default function Testimoni() {
                   key={data.id}
                   className="p-7 w-[300px] md:h-300 md:w-[500px]  border border-border rounded-2xl"
                 >
-                  <div className="flex">
-                    <Icon name="star" />
-                    <Icon name="star" />
-                    <Icon name="star" />
-                    <Icon name="star" />
-                    <Icon name="star" />
-                  </div>
-                  <div className="mt-1">
-                    <p className="line-clamp-3 font-medium text-sm text-baseBlack">
-                      {data.review}
-                    </p>
-                  </div>
                   <div className="mt-5">
                     <div className="flex gap-2">
                       <Icon name="user" />
@@ -235,6 +223,19 @@ export default function Testimoni() {
                         </p>
                       </div>
                     </div>
+                  </div>
+                  <div className="mt-1">
+                    <p className="line-clamp-3 font-medium text-sm text-baseBlack">
+                      {data.review}
+                    </p>
+                  </div>
+
+                  <div className="flex mt-4">
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
                   </div>
                 </div>
               );

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Icon from "./atom/icon/Icon";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -210,8 +209,8 @@ export default function Hero() {
       style={{ backgroundImage: "url('/bg.png')" }}
     >
       <div className="mx-5 w-[375px] md:w-[1055px] text-center flex flex-col items-center mt-2">
-        <div className="px-4 py-2 rounded-full md:px-4 md:py-3 bg-greyscale/10 w-fit">
-          <p className="text-xs font-medium md:text-sm text-baseBlack">
+        <div className="px-4 py-2 rounded-full md:px-4 md:py-3 border-2 border-secondary bg-orange w-fit">
+          <p className="text-xs font-medium md:text-sm text-secondary">
             JASA PROPOSAL PROFESIONAL
           </p>
         </div>

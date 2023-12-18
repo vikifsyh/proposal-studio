@@ -16,8 +16,8 @@ interface IconProps {
     | "facebook"
     | "instagram"
     | "mail"
-    | "line"
-    | "linbeMobile";
+    | "arrow-right"
+    | "arrow-left";
   className?: string;
 }
 
@@ -389,28 +389,56 @@ const Icon = ({ name, className }: IconProps) => {
           />
         </svg>
       );
-    case "line":
+
+    case "arrow-right":
       return (
         <svg
-          width="2"
-          height="120"
-          viewBox="0 0 2 120"
+          width="48"
+          height="49"
+          viewBox="0 0 48 49"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <line x1="1" y1="170" x2="1" stroke="#f7f8fb" stroke-width="2" />
+          <rect
+            x="0.5"
+            y="1"
+            width="47"
+            height="47"
+            rx="23.5"
+            stroke="#05408C"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.3991 33.2369C18.8408 33.5877 19.556 33.5877 19.9965 33.2369L29.3383 25.8C30.2206 25.0976 30.2206 23.958 29.3383 23.2556L19.9288 15.7633C19.4916 15.4162 18.7855 15.4114 18.3426 15.7541C17.8907 16.104 17.8851 16.6807 18.3302 17.036L26.9421 23.8915C27.3838 24.2431 27.3838 24.8125 26.9421 25.1641L18.3991 31.9651C17.9574 32.3159 17.9574 32.8862 18.3991 33.2369Z"
+            fill="#05408C"
+          />
         </svg>
       );
-    case "linbeMobile":
+    case "arrow-left":
       return (
         <svg
-          width="2"
-          height="71"
-          viewBox="0 0 2 71"
+          width="48"
+          height="49"
+          viewBox="0 0 48 49"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <line x1="1" y1="71" x2="1" stroke="white" stroke-width="2" />
+          <rect
+            x="47.5"
+            y="48"
+            width="47"
+            height="47"
+            rx="23.5"
+            transform="rotate(-180 47.5 48)"
+            stroke="#05408C"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M29.6009 15.7631C29.1592 15.4123 28.444 15.4123 28.0035 15.7631L18.6617 23.2C17.7794 23.9024 17.7794 25.042 18.6617 25.7444L28.0712 33.2367C28.5084 33.5838 29.2145 33.5886 29.6574 33.2459C30.1093 32.896 30.1149 32.3193 29.6698 31.964L21.0579 25.1085C20.6162 24.7569 20.6162 24.1875 21.0579 23.8359L29.6009 17.0349C30.0426 16.6841 30.0426 16.1138 29.6009 15.7631Z"
+            fill="#05408C"
+          />
         </svg>
       );
     default:
