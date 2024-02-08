@@ -44,7 +44,7 @@ const service = [
       </svg>
     ),
     title: "Proposal Kegiatan",
-    desc: "Dokumen merinci rencana dan pelaksanaan suatu kegiatan atau acara untuk mendapatkan persetujuan dan dukungan.",
+    desc: "Dokumen yang merinci rencana dan pelaksanaan suatu kegiatan atau acara untuk mendapatkan persetujuan dan dukungan.",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ const service = [
       </svg>
     ),
     title: "Proposal Sponsorship",
-    desc: "Dokumen permohonan dukungan finansial dari sponsor untuk suatu acara atau inisiatif tertentu",
+    desc: "Dokumen permohonan dukungan finansial dari sponsor untuk suatu acara atau inisiatif tertentu.",
   },
   {
     id: 4,
@@ -307,30 +307,27 @@ const service = [
 
 export default function Service() {
   return (
-    <div className="mx-20 mt-[100px]">
-      <div className="mb-16">
-        <h2 className="text-baseBlack text-4xl font-bold text-center">
-          Mewujudkan Ide Bisnis Anda melalui <br />
-          Proposal yang Mengesankan
+    <div id="service" className="mx-5 my-14 md:mx-20 md:my-[100px]">
+      <div className="lg:w-1/2 text-center mx-auto">
+        <h1 className="text-baseBlack text-2xl md:text-4xl tracking-tight font-bold text-center">
+          Mewujudkan Ide Brilian Anda Melalui Proposal Yang Mengesankan
+        </h1>
+        <h2 className="mt-1 lg:mt-3 text-center font-semibold text-lg md:text-xl text-baseBlack">
+          Temukan Layanan Profesional yang Tepat di Proposal Studio.
         </h2>
-        <p className="mt-6 text-center text-xl text-baseBlack font-medium">
-          Solusi Proposalku untuk Bisnismu – Dari Proposal Bisnis hingga
-          Kerjasama, Temukan
-          <br /> Layanan Profesional yang Tepat di Proposal Studio.
-        </p>
       </div>
-      <div className="grid grid-cols-3 gap-6">
-        {service.map((data, i) => {
+      <div className="mt-8 md:mt-16 md:grid md:grid-cols-3 gap-6">
+        {service.map((data) => {
           return (
             <div
               key={data.id}
               className="py-6 px-2 items-center justify-center flex flex-col"
             >
               <div>{data.icon}</div>
-              <h2 className="text-2xl text-baseBlack font-bold mt-2">
+              <h2 className="md:text-xl lg:text-2xl text-center text-baseBlack font-semibold mt-2">
                 {data.title}
               </h2>
-              <p className="font-medium text-xl text-border text-center mt-3">
+              <p className="font-normal md:text-sm lg:text-base text-baseBlack text-center mt-3">
                 {data.desc}
               </p>
             </div>

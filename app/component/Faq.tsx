@@ -8,8 +8,8 @@ import {
 
 export default function Faq() {
   return (
-    <div className="mx-5 md:mx-20 my-14 md:mt-[200px] flex-col items-center justify-center flex">
-      <h2 className="text-xl md:text-4xl text-baseBlack font-bold  text-center">
+    <div className="mx-5 my-14 md:mx-20 md:my-[100px] flex-col items-center justify-center flex">
+      <h2 className="text-baseBlack text-2xl md:text-4xl tracking-tight font-bold text-center">
         Memiliki Pertanyaan?
         <br /> Temukan <span className="text-primary">jawabannya</span> secara
         mudah di FAQ kami
@@ -17,7 +17,7 @@ export default function Faq() {
       <Accordion
         type="single"
         collapsible
-        className="w-auto md:w-[1145px] md:mt-10 mt-5 "
+        className="w-full max-w-6xl md:mt-10 mt-5 "
       >
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-start text-base md:text-xl font-medium text-baseBlack">

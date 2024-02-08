@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-padding-top: 120px; /* height of your navbar */
+}
+
+/* hamburger */
+.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6.5px, 6.5px);
+}
+
+.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+.active-link {
+  text-decoration-line: underline;
+  color: #05408c;
+  transition: all 0.5s ease-in-out;
+}
+
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.bg-blur {
+  box-shadow: inset 0 -1px 0 0 #eaeaea;
+  transform: translateZ(0);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+  background: hsla(0, 0%, 100%, 0.8);
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

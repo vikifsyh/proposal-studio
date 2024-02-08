@@ -1,7 +1,8 @@
 "use client";
-import Icon from "./atom/icon/Icon";
+
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Icon from "./atom/Icon";
 
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -196,7 +197,7 @@ export default function Hero() {
     setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
 
-  // Auto scroll every 5 seconds (adjust as needed)
+  // Auto scroll every 3 seconds (adjust as needed)
   useEffect(() => {
     const intervalId = setInterval(handleNext, 3000);
 
@@ -208,28 +209,32 @@ export default function Hero() {
       className="mt-24 md:mt-[170px] w-full mx-auto flex items-center justify-center"
       style={{ backgroundImage: "url('/bg.png')" }}
     >
-      <div className="mx-5 w-[375px] md:w-[1055px] text-center flex flex-col items-center mt-2">
+      <div className="mx-5 md:mx-20 text-center flex flex-col items-center mt-2 w-full">
         <div className="px-4 py-2 rounded-full md:px-4 md:py-3 border-2 border-secondary bg-orange w-fit">
           <p className="text-xs font-medium md:text-sm text-secondary">
             JASA PROPOSAL PROFESIONAL
           </p>
         </div>
-        <div className="items-center mt-2">
-          <h1 className="text-3xl md:text-7xl font-bold text-baseBlack">
+        <div className="items-center mt-2 max-w-5xl">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-baseBlack">
             Realisasikan Tujuanmu Bersama
             <span className="text-primary"> PROPOSAL</span>
             <span className="text-secondary"> STUDIO</span>
           </h1>
         </div>
-        <div className="mt-[14px]">
+        <div className="mt-[14px] max-w-4xl">
           <p className="text-sm md:text-xl font-medium text-baseBlack">
-            Percayakan kesuksesan proposal Anda kepada kami. Tim profesional dan
-            berpengalaman dari kami akan membantu Anda meraih kesuksesan yang
-            lebih besar
+            &ldquo;Percayakan kesuksesan proposal Anda kepada kami. Tim
+            profesional dan berpengalaman dari kami akan membantu Anda meraih
+            kesuksesan yang lebih besar&rdquo;
           </p>
         </div>
         <div className="mt-10">
-          <Link href={"/"}>
+          <Link
+            href={`https://wa.me/6281226831649?text=${encodeURIComponent(
+              "Hallo Kak, saya ingin tanya terkait proposal, apakah bisa dibantu?"
+            )}`}
+          >
             <button className="bg-primary hover:bg-primary/50 focus:ring-4 focus:ring-blue-300 ease-in duration-200 rounded-full flex py-4 px-6 md:py-5 md:px-8 gap-2">
               <Icon name="whatsapp" />
               <p className="font-medium text-base md:text-lg text-white">
@@ -240,7 +245,7 @@ export default function Hero() {
         </div>
 
         {/* Keunggulan kami */}
-        <div className="bg-primary/70 mb-[100px] w-[1352px] rounded-[20px] mt-[60px] p-[60px] hidden md:block">
+        <div className="bg-primary/70 mb-[100px] max-w-full rounded-[20px] mt-[60px] p-[60px] hidden lg:block">
           <h2 className="text-white text-4xl font-semibold">
             Keunggulan Memilih Layanan Kami
           </h2>
@@ -264,8 +269,8 @@ export default function Hero() {
         </div>
 
         {/* Mobile version */}
-        <div className="bg-primary/70 my-14 w-[327px] rounded-xl block md:hidden">
-          <h2 className="text-lg font-semibold text-white px-14 py-3">
+        <div className="bg-primary/70 my-14 w-full rounded-xl block lg:hidden">
+          <h2 className="text-lg md:text-2xl font-semibold text-white px-14 py-3 mt -5">
             Keunggulan Memilih Layanan Kami
           </h2>
           <div className="mt-10 mb-10">
@@ -273,7 +278,7 @@ export default function Hero() {
               <div className="rounded-full bg-white p-5 gap-2 overflow-hidden w-[108px] h-[108px] items-center flex justify-center">
                 {items[activeIndex].icon}
               </div>
-              <h2 className="font-medium text-2xl text-white justify-center items-center mt-[10px]">
+              <h2 className="font-medium text-2xl md:text-4xl text-white justify-center items-center mt-[10px]">
                 {items[activeIndex].title}
               </h2>
             </div>

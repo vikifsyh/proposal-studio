@@ -17,7 +17,7 @@ const config: Config = {
       colors: {
         primary: "#05408C",
         secondary: "#CA5419",
-        baseBlack: "#272E38",
+        baseBlack: "#1f2328",
         greyscale: "#292D321A",
         border: "#9A9A9A",
         orange: "#FAE8DF",
